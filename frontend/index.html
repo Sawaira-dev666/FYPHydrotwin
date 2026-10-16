@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HydroTwin AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <nav id="rail" aria-label="Progress">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">HydroTwin AI</span>
+        </div>
+        <ol id="steps"></ol>
+        <button id="restart" class="link-btn" type="button">Start over</button>
+      </nav>
+
+      <main id="stage" data-view="map">
+        <div id="map" aria-label="Map of Punjab"></div>
+        <div id="lockmark" hidden>
+          <div class="ring"></div>
+          <div class="lock-text">
+            <strong>Location locked</strong>
+            <span id="lock-coords"></span>
+          </div>
+        </div>
+        <div id="twin" aria-label="3D digital twin"></div>
+        <div id="toolbar" hidden>
+          <button type="button" data-cam="overview">Overview</button>
+          <button type="button" data-cam="property">Property</button>
+          <button type="button" data-cam="street">Street level</button>
+          <span id="vr-slot"></span>
+        </div>
+        <div id="hud" hidden>
+          Drag to rotate · scroll to zoom · right-drag to pan
+          <span id="sat-note"></span>
+        </div>
+        <div id="banner" hidden></div>
+      </main>
+
+      <aside id="panel" aria-live="polite"></aside>
+    </div>
+
+    <div id="report" hidden></div>
+    <div id="toast" role="status" hidden></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

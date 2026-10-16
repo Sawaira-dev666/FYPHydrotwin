@@ -1,0 +1,28 @@
+{
+    "project": "HydroTwin AI",
+    "model_type": "Random Forest Classifier",
+    "n_estimators": 300,
+    "class_weight": "balanced",
+    "min_samples_leaf": 3,
+    "random_state": 42,
+    "features": [
+        "elevation_m",
+        "hand_m",
+        "distance_to_river_m",
+        "distance_to_canal_m",
+        "distance_to_road_m",
+        "historical_rainfall_mean",
+        "maximum_rainfall_mm",
+        "maximum_3day_rainfall_mm",
+        "maximum_7day_rainfall_mm"
+    ],
+    "target": "observed_flood_target",
+    "target_definition": {
+        "0": "Sample point outside documented UNOSAT flood-water extent",
+        "1": "Sample point inside documented UNOSAT flood-water extent"
+    },
+    "training_rows": 10263,
+    "training_features": 9,
+    "missing_value_strategy": "Median imputation",
+    "deployment_threshold": 0.5
+}

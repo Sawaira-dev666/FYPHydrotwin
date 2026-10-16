@@ -1,0 +1,31 @@
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Frontend dependencies and build output
+node_modules/
+.next/
+out/
+dist/
+
+# Large local GIS data - retain locally, do not commit
+backend/data/*.pbf
+backend/data/*.tif
+backend/data/*.tiff
+
+# Logs and caches
+*.log
+.cache/
+.turbo/
+
+# OS files
+.DS_Store
+Thumbs.db
