@@ -11,7 +11,7 @@ pip install fastapi uvicorn pydantic numpy pandas scipy scikit-learn joblib rast
 
 
 
-Running
+
 
 From the HydroTwin folder (the one that contains backend) with the venv activated:
 
@@ -25,6 +25,8 @@ Open http://127.0.0.1:8000/docs to test the API interactively.
 
 FOR FRONTEND
 
-open the terminal in the FRONTEND folder and then rUN NPM I 
-and after that run npm run dev 
-and then enjoy and tell me the updates thank u so we can go to the other modules as our main work is done if needed something do let me know
+open the terminal in the FRONTEND folder and then rUN "npm i" 
+and after that "run npm run dev "
+and then enjoy and tell me the updates 
+thank u so we can go to the other modules as our  MAIN work hasn't started YET
+if needed something do let me know
