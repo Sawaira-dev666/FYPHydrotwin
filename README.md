@@ -7,7 +7,6 @@ these cmds
 
 python -m venv venv
 venv\Scripts\activate          # Windows
-# source venv/bin/activate     # Mac/Linux
 pip install fastapi uvicorn pydantic numpy pandas scipy scikit-learn joblib rasterio geopandas shapely pyogrio
 
 
